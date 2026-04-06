@@ -164,9 +164,9 @@ function link_module() {
         ln -s ../../../../modules/$mod/python/pfs/ga/pfsspec/$dir python/pfs/ga/pfsspec/$dir
     fi
 
-    if [[ ! -L python/test/pfs/ga/pfsspec/$dir ]]; then
+    if [[ ! -L tests/pfsspec/$dir ]]; then
       echo "Creating symlink to tests for module $mod, directory $dir"
-        ln -s ../../../../../modules/$mod/python/test/$dir python/test/pfs/ga/pfsspec/$dir
+        ln -s ../../modules/$mod/python/test/$dir tests/pfsspec/$dir
     fi
 
     if [[ ! -L scripts/$dir ]]; then
@@ -281,8 +281,8 @@ PFSSPEC_DATA="$PFSSPEC_DATA"
 PFSSPEC_TEST="$PFSSPEC_TEST"
 
 PFSSPEC_PFS_DATADIR="$PFSSPEC_PFS_DATADIR"
-PFSSPEC_PFS_RERUNDIR="$PFSSPEC_PFS_RERUNDIR"
-PFSSPEC_PFS_RERUN="$PFSSPEC_PFS_RERUN"
+PFSSPEC_PFS_RUNDIR="$PFSSPEC_PFS_RUNDIR"
+PFSSPEC_PFS_RUN="$PFSSPEC_PFS_RUN"
 PFSSPEC_PFS_DESIGNDIR="$PFSSPEC_PFS_DESIGNDIR"
 PFSSPEC_PFS_CONFIGDIR="$PFSSPEC_PFS_CONFIGDIR"
 
