@@ -190,10 +190,6 @@ function link_module() {
 link_module core core
 link_module stellar stellar
 link_module survey survey
-link_module sim sim
-link_module learn learn
-link_module ws ws
-link_module wsclient wsclient
 
 ######## GIT/SSH config ########################################################
 
